@@ -3,9 +3,10 @@
   right: 0px;
   position: fixed;
   top: 50%;
-  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%)
+  /* -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
 }
 
 .sharebar a {
@@ -51,7 +52,61 @@
   color: white;
 }
 
-.content {
-  margin-left: 75px;
-  font-size: 30px;
+@media (max-width: 600px) {
+  .sharebar {
+  	position: fixed;
+    display: inline;
+    text-align: center;
+    left: 0%;
+    top: auto;
+    bottom: 0px;
+    width: 50%;
+    margin: auto;
+  } 
+  .sharebar a {
+    display: inline;
+    padding: 14px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;   
+  }
+}
+
+@media (max-width: 500px) {
+  .sharebar {
+  	position: fixed;
+    display: inline;
+    left: 0%;
+    top: auto;
+    bottom: 0px;
+    width: 50%;
+    margin: auto;
+  } 
+  .sharebar a {
+    display: inline;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.3s ease;
+    color: white; 
+  }
+}
+
+@media (max-width: 400px) {
+  .sharebar {
+  	position: fixed;
+    display: inline;
+    left: 0%;
+    top: auto;
+    bottom: 0px;
+    width: 50%;
+    margin: auto;
+  } 
+  .sharebar a {
+    display: inline;
+    text-align: center;
+    padding: 6px;
+    transition: all 0.3s ease;
+    color: white; 
+    font-size: 14px; 
+  }
 }
