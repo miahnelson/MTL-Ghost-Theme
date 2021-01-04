@@ -1,7 +1,7 @@
 {
     "name": "maketimelabs-theme",
     "description": "Modified version of casper for maketimelabs.com",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
